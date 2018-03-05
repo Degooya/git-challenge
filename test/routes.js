@@ -95,7 +95,11 @@ tape('should get reverse', function (t) {
     t.ifError(err, 'no error')
 
     t.equal(res.statusCode, 200, 'correct statusCode')
+<<<<<<< HEAD
     t.deepEqual(res.body, expected, 'values should match')
+=======
+    t.deepEqual(res.body, {one: '1', two: '2'}, 'values should match')
+>>>>>>> feat: add echo route
     t.end()
   })
 })
